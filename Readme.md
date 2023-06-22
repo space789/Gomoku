@@ -16,6 +16,14 @@ You can choose the game mode from the menu. You can choose to play against the c
 
 ![Screenshot 1](Screen%20shot.jpg)
 
+## Algorithm
+
+The computer uses a simple algorithm to determine the best move. The algorithm is based on the minimax algorithm. The computer will try to maximize its score and minimize the score of the opponent. The score is calculated by counting the number of stones in a row. The computer will try to place a stone in a position that will maximize the score. The computer will also try to block the opponent from winning.
+
 ## How to run
 
 You can run the game by opening the `Gomoku.exe` file.
+
+## Future improvements
+
+I would like to improve the algorithm to make it more efficient (AI). I would also like to add a feature that allows the player to choose the difficulty level of the computer.
