@@ -1,20 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Gomoku
 {
-    class PredictPiece : Piece
+    public partial class PredictPiece : Component
     {
-        public PredictPiece(int x, int y, int z) : base(x, y, z)
+        public PredictPiece()
         {
-            this.Image = Properties.Resources.Predict;
+            InitializeComponent();
         }
-        public override PieceType GetPieceType()
+
+        public PredictPiece(IContainer container)
         {
-            return PieceType.Predict;
+            container.Add(this);
+
+            InitializeComponent();
         }
     }
 }

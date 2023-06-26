@@ -31,7 +31,7 @@ namespace Gomoku
                 Piece piece = game.PlaceAPiece(e.X, e.Y);
                 PieceComputer number = game.Number(e.X, e.Y);
                 if (piece != null)
-                { 
+                {
                     this.Controls.Add(number);
                     this.Controls.Add(piece);
                     displayNumberVisible();
@@ -69,14 +69,15 @@ namespace Gomoku
                 //檢查是否有人獲勝
                 Winner();
                 //檢查是否有快要贏
-               // AlmostWinner();
+                // AlmostWinner();
             }
-            if (PlayWithPeople.Checked == true && BlackFirst.Checked == true && this.start == false
+            if ((PlayWithPeople.Checked == true && BlackFirst.Checked == true && this.start == false
                 || PlayWithPeople.Checked == true && WhiteFirst.Checked == true && this.start == false
                 || PlayWithComputer.Checked == true && ComputerAfter.Checked == true && BlackFirst.Checked == true && this.start == false
                 || PlayWithComputer.Checked == true && ComputerAfter.Checked == true && WhiteFirst.Checked == true && this.start == false
                 || PlayWithComputer.Checked == true && ComputerFirst.Checked == true && BlackFirst.Checked == true && this.start == false
                 || PlayWithComputer.Checked == true && ComputerFirst.Checked == true && WhiteFirst.Checked == true && this.start == false)
+                && game.Winner == PieceType.NONE)
                 Start.Enabled = true;
             else
                 Start.Enabled = false;
@@ -118,13 +119,13 @@ namespace Gomoku
                 this.start = false;
                 //newRound();
             }
-            else if(game.Winner == game.ComputerPlayer && game.Winner != PieceType.NONE  && playWithPeople == false)
+            else if (game.Winner == game.ComputerPlayer && game.Winner != PieceType.NONE && playWithPeople == false)
             {
                 MessageBox.Show("電腦獲勝");
                 this.start = false;
                 //newRound();
             }
-            else if(game.Winner != game.ComputerPlayer && game.Winner != PieceType.NONE && playWithPeople == false)
+            else if (game.Winner != game.ComputerPlayer && game.Winner != PieceType.NONE && playWithPeople == false)
             {
                 MessageBox.Show("您獲勝");
                 this.start = false;
@@ -136,7 +137,7 @@ namespace Gomoku
         {
             if (game.AlmostWinner == PieceType.WHITE)
                 Position.Items.Add("白色快贏了");
-            else if(game.AlmostWinner == PieceType.BLACK)
+            else if (game.AlmostWinner == PieceType.BLACK)
                 Position.Items.Add("黑色快贏了");
 
         }
@@ -221,17 +222,17 @@ namespace Gomoku
             center = game.LookLastPiece();
             if (game.CurrentPlayer == PieceType.BLACK && playWithPeople == true)
                 Position.Items.Add(Board.PlaceNodeCountRead + "." + "白棋下在: " + center[0] + " , " + center[1]);
-            else if(game.CurrentPlayer == PieceType.WHITE && playWithPeople == true)
+            else if (game.CurrentPlayer == PieceType.WHITE && playWithPeople == true)
                 Position.Items.Add(Board.PlaceNodeCountRead + "." + "黑棋下在: " + center[0] + " , " + center[1]);
-            else if(game.CurrentPlayer != game.ComputerPlayer && playWithPeople == false)
+            else if (game.CurrentPlayer != game.ComputerPlayer && playWithPeople == false)
                 Position.Items.Add(Board.PlaceNodeCountRead + "." + "電腦下在: " + center[0] + " , " + center[1]);
-            else if(game.CurrentPlayer == game.ComputerPlayer && playWithPeople == false)
+            else if (game.CurrentPlayer == game.ComputerPlayer && playWithPeople == false)
                 Position.Items.Add(Board.PlaceNodeCountRead + "." + "您下在: " + center[0] + " , " + center[1]);
         }
 
         private void PlayWithComputer_CheckedChanged(object sender, EventArgs e)
         {
-            ComputerPanel.Enabled = true; 
+            ComputerPanel.Enabled = true;
         }
 
         private void PlayWithPeople_CheckedChanged(object sender, EventArgs e)

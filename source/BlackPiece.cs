@@ -8,7 +8,7 @@ namespace Gomoku
 {
     class BlackPiece : Piece
     {
-        public BlackPiece (int x,int y,int z) : base(x, y ,z)
+        public BlackPiece(int x, int y, int z) : base(x, y, z)
         {
             this.Image = Properties.Resources.black;
         }

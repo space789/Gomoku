@@ -8,7 +8,7 @@ namespace Gomoku
 {
     class WhitePiece : Piece
     {
-        public WhitePiece(int x, int y,int z) : base(x, y, z)
+        public WhitePiece(int x, int y, int z) : base(x, y, z)
         {
             this.Image = Properties.Resources.white;
         }

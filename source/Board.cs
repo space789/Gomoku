@@ -73,7 +73,7 @@ namespace Gomoku
 
             return pieces[nodeId.X, nodeId.Y];
         }
-        
+
         public PieceComputer Number(int x, int y)
         {
             Point nodeId = findTheClosetNode(x, y);
@@ -85,11 +85,11 @@ namespace Gomoku
         {
             x = x * NODE_DISTANCE + OFFSET;
             y = y * NODE_DISTANCE + OFFSET;
-            PlaceNumber computernumber = new PlaceNumber(x ,y , placeNodeCount);
+            PlaceNumber computernumber = new PlaceNumber(x, y, placeNodeCount);
             return computernumber;
         }
 
-        public Piece CumputerPlaceAPiece(int x, int y, PieceType type)
+        public Piece ComputerPlaceAPiece(int x, int y, PieceType type)
         {
             //找出節點 (Node)
             Point nodeId = new Point(x, y);
@@ -97,21 +97,25 @@ namespace Gomoku
             //如果有的話，檢查是否已經有棋子存在
             if (pieces[nodeId.X, nodeId.Y] != null)
                 return null;
+
             Point formPos = convertToFormPosition(nodeId);
+
             //根據Type產生對應的棋子
             if (type == PieceType.BLACK)
                 pieces[nodeId.X, nodeId.Y] = new BlackPiece(formPos.X, formPos.Y, placeNodeCount);
             else if (type == PieceType.WHITE)
                 pieces[nodeId.X, nodeId.Y] = new WhitePiece(formPos.X, formPos.Y, placeNodeCount);
+
             //紀錄最後下棋子的位置
             lastPlaceNode[placeNodeCount] = nodeId;
             placeNodeCount++;
             PlaceNodeCountRead = placeNodeCount;
-            //設計預測Node
 
+            //設計預測Node
 
             return pieces[nodeId.X, nodeId.Y];
         }
+
 
 
         public void CleanlastPlaceNode()

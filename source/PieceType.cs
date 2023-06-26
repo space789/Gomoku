@@ -8,6 +8,6 @@ namespace Gomoku
 {
     enum PieceType
     {
-        BLACK,WHITE,Predict, NONE
+        BLACK, WHITE, Predict, NONE
     }
 }

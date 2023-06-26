@@ -76,7 +76,7 @@
             // 
             // BlackFirst
             // 
-            this.BlackFirst.Font = new System.Drawing.Font("PMingLiU", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.BlackFirst.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.BlackFirst.Location = new System.Drawing.Point(18, 3);
             this.BlackFirst.Name = "BlackFirst";
             this.BlackFirst.Size = new System.Drawing.Size(122, 29);
@@ -87,7 +87,7 @@
             // 
             // WhiteFirst
             // 
-            this.WhiteFirst.Font = new System.Drawing.Font("PMingLiU", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.WhiteFirst.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.WhiteFirst.Location = new System.Drawing.Point(18, 38);
             this.WhiteFirst.Name = "WhiteFirst";
             this.WhiteFirst.Size = new System.Drawing.Size(122, 36);
@@ -99,7 +99,7 @@
             // Start
             // 
             this.Start.Enabled = false;
-            this.Start.Font = new System.Drawing.Font("PMingLiU", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.Start.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Start.Location = new System.Drawing.Point(849, 240);
             this.Start.Name = "Start";
             this.Start.Size = new System.Drawing.Size(145, 48);
@@ -111,7 +111,7 @@
             // End
             // 
             this.End.Enabled = false;
-            this.End.Font = new System.Drawing.Font("PMingLiU", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.End.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.End.Location = new System.Drawing.Point(849, 288);
             this.End.Name = "End";
             this.End.Size = new System.Drawing.Size(145, 48);
@@ -124,7 +124,7 @@
             // 
             this.Position.BackColor = System.Drawing.SystemColors.Window;
             this.Position.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Position.Font = new System.Drawing.Font("PMingLiU", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.Position.Font = new System.Drawing.Font("新細明體", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Position.FormattingEnabled = true;
             this.Position.ItemHeight = 20;
             this.Position.Location = new System.Drawing.Point(849, 388);
@@ -134,7 +134,7 @@
             // 
             // PlayWithPeople
             // 
-            this.PlayWithPeople.Font = new System.Drawing.Font("PMingLiU", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.PlayWithPeople.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.PlayWithPeople.Location = new System.Drawing.Point(18, 3);
             this.PlayWithPeople.Name = "PlayWithPeople";
             this.PlayWithPeople.Size = new System.Drawing.Size(125, 29);
@@ -146,7 +146,7 @@
             // 
             // PlayWithComputer
             // 
-            this.PlayWithComputer.Font = new System.Drawing.Font("PMingLiU", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.PlayWithComputer.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.PlayWithComputer.Location = new System.Drawing.Point(18, 38);
             this.PlayWithComputer.Name = "PlayWithComputer";
             this.PlayWithComputer.Size = new System.Drawing.Size(144, 29);
@@ -189,7 +189,7 @@
             // 
             // ComputerFirst
             // 
-            this.ComputerFirst.Font = new System.Drawing.Font("PMingLiU", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.ComputerFirst.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.ComputerFirst.Location = new System.Drawing.Point(18, 3);
             this.ComputerFirst.Name = "ComputerFirst";
             this.ComputerFirst.Size = new System.Drawing.Size(125, 29);
@@ -200,7 +200,7 @@
             // 
             // ComputerAfter
             // 
-            this.ComputerAfter.Font = new System.Drawing.Font("PMingLiU", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.ComputerAfter.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.ComputerAfter.Location = new System.Drawing.Point(18, 38);
             this.ComputerAfter.Name = "ComputerAfter";
             this.ComputerAfter.Size = new System.Drawing.Size(144, 29);
@@ -214,7 +214,7 @@
             this.DisplayNumber.AutoSize = true;
             this.DisplayNumber.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.DisplayNumber.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.DisplayNumber.Font = new System.Drawing.Font("PMingLiU", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.DisplayNumber.Font = new System.Drawing.Font("新細明體", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.DisplayNumber.Location = new System.Drawing.Point(8, 3);
             this.DisplayNumber.Name = "DisplayNumber";
             this.DisplayNumber.Size = new System.Drawing.Size(105, 36);
@@ -249,7 +249,7 @@
             this.Controls.Add(this.Start);
             this.Controls.Add(this.Previous);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("PMingLiU", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.Font = new System.Drawing.Font("新細明體", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(0);
